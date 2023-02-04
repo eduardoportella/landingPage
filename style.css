@@ -10,9 +10,9 @@
 :root {
    --primaryBackground: #012E40;
    --secondaryBackground: #024959;
-   --primaryText: #F2E3D5;
    --secondaryText: #3CA6A6;
    --primaryTitle: #026773;
+   --primaryText: #F2E3D5;
 }
 
 body {
@@ -21,6 +21,19 @@ body {
    font-family: 'Inconsolata', monospace;
    margin: 0;
    padding: 0;
+}
+
+body::-webkit-scrollbar{
+   width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+   background: var(--primaryBackground);
+}
+
+body::-webkit-scrollbar-thumb{
+   background: var(--secondaryBackground);
+
 }
 
 header{
@@ -33,6 +46,11 @@ header a {
    text-decoration: none;
    padding: 10px;
    color: var(--secondaryText);
+}
+
+header a:hover {
+   color: var(--primaryTitle);
+   transition: 0.3s;
 }
 
 ul {
@@ -64,7 +82,7 @@ h2 {
 }
 
 #home button {
-   background-color: var(--primaryTitle);
+   background-color: var(--secondaryBackground);
    border-radius: 4px;
    width: 150px;
    height: 30px;
@@ -75,7 +93,7 @@ h2 {
 
 #home button:hover {
    background-color: #F2E3D5;
-   color: var(--primaryTitle);
+   color: var(--secondaryBackground);
    cursor: pointer;
 }
 
@@ -99,7 +117,7 @@ footer {
    justify-content: center;
    height: 100px;
    align-items: center;
-   background-color: var(--primaryTitle);
+   background-color: var(--secondaryText);
 }
 
 footer a{
