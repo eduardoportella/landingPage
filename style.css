@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@supports (font-variation-settings: "wght" 700) {
+   * {
+     font-family: 'Inconsolata';
+     font-weight: 700;
+   }
+}
+
+body {
+   background-color: #012E40;
+   color: #F2E3D5;
+   font-family: 'Inconsolata', monospace;
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   background-color: #012E40;
+   position: fixed;
+   width: 100%;
+}
+
+header a {
+   text-decoration: none;
+   padding: 10px;
+   color: #3CA6A6;
+}
+
+ul {
+   display: flex;
+   justify-content: flex-end;
+}
+
+
+div {
+   padding: 20px;
+}
+
+h2 {
+   color: #3CA6A6;
+}
+
+#home {
+   margin: 0 0 0 0;
+   display: flex;
+   align-items: center;
+}
+
+#home div{
+   padding: 40px;
+}
+
+#home div h1{
+   color: #026773;
+}
+
+#home button {
+   background-color: #026773;
+   border-radius: 4px;
+   width: 150px;
+   height: 30px;
+   border: none;
+   font-weight: 700wg;
+   color: #F2E3D5;
+}
+
+#home button:hover {
+   background-color: #F2E3D5;
+   color: #026773;
+   cursor: pointer;
+}
+
+#cardImages {
+   display: flex;
+   justify-content: center;
+}
+
+.cards {
+   background-color: #024959;
+   margin: 10px 30px 10px 30px;
+   border-radius: 10px;
+}
+
+#skills img {
+   width: 150px;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   height: 100px;
+   align-items: center;
+   background-color: #026773;
+}
+
+footer a{
+   padding: 10px;
+   text-decoration: none;
+   color: #012E40;
+}
