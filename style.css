@@ -7,16 +7,24 @@
    }
 }
 
+:root {
+   --primaryBackground: #012E40;
+   --secondaryBackground: #024959;
+   --primaryText: #F2E3D5;
+   --secondaryText: #3CA6A6;
+   --primaryTitle: #026773;
+}
+
 body {
-   background-color: #012E40;
-   color: #F2E3D5;
+   background-color: var(--primaryBackground);
+   color: var(--primaryText);
    font-family: 'Inconsolata', monospace;
    margin: 0;
    padding: 0;
 }
 
 header{
-   background-color: #012E40;
+   background-color: var(--primaryBackground);
    position: fixed;
    width: 100%;
 }
@@ -24,7 +32,7 @@ header{
 header a {
    text-decoration: none;
    padding: 10px;
-   color: #3CA6A6;
+   color: var(--secondaryText);
 }
 
 ul {
@@ -38,7 +46,7 @@ div {
 }
 
 h2 {
-   color: #3CA6A6;
+   color: var(--secondaryText);
 }
 
 #home {
@@ -52,11 +60,11 @@ h2 {
 }
 
 #home div h1{
-   color: #026773;
+   color: var(--primaryTitle);
 }
 
 #home button {
-   background-color: #026773;
+   background-color: var(--primaryTitle);
    border-radius: 4px;
    width: 150px;
    height: 30px;
@@ -67,7 +75,7 @@ h2 {
 
 #home button:hover {
    background-color: #F2E3D5;
-   color: #026773;
+   color: var(--primaryTitle);
    cursor: pointer;
 }
 
@@ -77,7 +85,7 @@ h2 {
 }
 
 .cards {
-   background-color: #024959;
+   background-color: var(--secondaryBackground);
    margin: 10px 30px 10px 30px;
    border-radius: 10px;
 }
@@ -91,11 +99,11 @@ footer {
    justify-content: center;
    height: 100px;
    align-items: center;
-   background-color: #026773;
+   background-color: var(--primaryTitle);
 }
 
 footer a{
    padding: 10px;
    text-decoration: none;
-   color: #012E40;
+   color: var(--primaryBackground);
 }
