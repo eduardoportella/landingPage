@@ -8,16 +8,20 @@
 }
 
 :root {
-   --primaryBackground: #012E40;
-   --secondaryBackground: #024959;
-   --secondaryText: #3CA6A6;
-   --primaryTitle: #026773;
-   --primaryText: #F2E3D5;
+   --color1: #012E40;
+   --color2: #024959;
+   --color3: #3CA6A6;
+   --color4: #026773;
+   --color5: #F2E3D5;
+}
+
+html {
+   scroll-behavior: smooth;
 }
 
 body {
-   background-color: var(--primaryBackground);
-   color: var(--primaryText);
+   background-color: var(--color1);
+   color: var(--color5);
    font-family: 'Inconsolata', monospace;
    margin: 0;
    padding: 0;
@@ -28,16 +32,15 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-   background: var(--primaryBackground);
+   background: var(--color1);
 }
 
 body::-webkit-scrollbar-thumb{
-   background: var(--secondaryBackground);
-
+   background: var(--color2);
 }
 
 header{
-   background-color: var(--primaryBackground);
+   background-color: var(--color1);
    position: fixed;
    width: 100%;
 }
@@ -45,44 +48,45 @@ header{
 header a {
    text-decoration: none;
    padding: 10px;
-   color: var(--secondaryText);
+   color: var(--color3);
 }
 
 header a:hover {
-   color: var(--primaryTitle);
+   color: var(--color4);
    transition: 0.3s;
 }
-
-ul {
-   display: flex;
-   justify-content: flex-end;
-}
-
 
 div {
    padding: 20px;
 }
 
-h2 {
-   color: var(--secondaryText);
+#home {
+   display: flex;
+   /* text-align: center; */
+   align-items: center;
+   justify-content: space-around;
 }
 
-#home {
-   margin: 0 0 0 0;
-   display: flex;
-   align-items: center;
+#home h2 {
+   color: var(--color3);
+   font-size: clamp(1em, 1.5vw, 2em);
 }
 
 #home div{
-   padding: 40px;
+   padding: 260px 40px;
+}
+
+#home img{
+   text-align: right;
+   margin: auto;
 }
 
 #home div h1{
-   color: var(--primaryTitle);
+   color: var(--color4);
 }
 
 #home button {
-   background-color: var(--secondaryBackground);
+   background-color: var(--color2);
    border-radius: 4px;
    width: 150px;
    height: 30px;
@@ -93,35 +97,67 @@ h2 {
 
 #home button:hover {
    background-color: #F2E3D5;
-   color: var(--secondaryBackground);
+   color: var(--color2);
    cursor: pointer;
 }
 
-#cardImages {
+#about {
+   align-items: center;
+   background-color: var(--color2);
+   padding: 200px 50px;
+   margin: 0;
+}
+
+#about p{
+   font-size: 20px;
+}
+
+.cards h1{
+   color: var(--color3);
+   font-size: clamp(1.75em, 2em, 2.5em);
+}
+
+#skills {
+   padding: 270px 50px;
    display: flex;
    justify-content: center;
+   margin: 0 auto;
 }
 
-.cards {
-   background-color: var(--secondaryBackground);
-   margin: 10px 30px 10px 30px;
-   border-radius: 10px;
+#skills ul{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 
-#skills img {
-   width: 150px;
+#skills li {
+   font-size: clamp(0.7em, 1.2vw, 2em);
+   padding: 2px;
+   white-space: nowrap;
+}
+
+.skillsList {
+   border: 1px solid var(--color3);
+}
+
+#softSkills {
+   text-align: right;
 }
 
 footer {
+   color: var(--color1);
    display: flex;
    justify-content: center;
    height: 100px;
    align-items: center;
-   background-color: var(--secondaryText);
+   background-color: var(--color3);
 }
 
 footer a{
    padding: 10px;
    text-decoration: none;
-   color: var(--primaryBackground);
+   color: var(--color1);
 }
