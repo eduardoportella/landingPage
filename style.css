@@ -62,9 +62,9 @@ div {
 
 #home {
    display: flex;
-   /* text-align: center; */
    align-items: center;
    justify-content: space-around;
+   padding-bottom: 30px;
 }
 
 #home h2 {
